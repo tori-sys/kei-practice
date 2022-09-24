@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>書籍</title>
+</head>
+<body>
+	<form th:action="@{/form}" th:ofject="${book}" method="post">
+		<label for="title">タイトル:</label>
+		<input type="text" th:field="*{title}"><br>
+		
+		<label for="body">本文:</label>
+		<input type="text" th:field="*{body}"><br>
+		
+		<button>送信</button>	
+	</form>
+</body>
+</html>

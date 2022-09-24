@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>本</title>
+</head>
+<body>
+	<span th:inline="text">
+	タイトル: [[${book.title}]]<br>
+	本文: [[${book.body}]]<br>
+	</span>
+</body>
+</html>
